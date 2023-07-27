@@ -19,7 +19,7 @@ struct StudentInfo: Codable {
 // MARK: - Semester
 struct Semester: Codable {
     let number: String
-    let disciplines: [Discipline]
+    let disciplines: [DisciplineTest]
 
     enum CodingKeys: String, CodingKey {
         case number = "Number"
@@ -28,7 +28,7 @@ struct Semester: Codable {
 }
 
 // MARK: - Discipline
-struct Discipline: Codable {
+struct DisciplineTest: Codable {
     let disciplineID: String
     let disciplineName: DisciplineName
     let lesson: [Lesson]
